@@ -211,6 +211,10 @@ const applyCssStyles = () => {
   BODY.style.backgroundAttachment = 'fixed';
 };
 
+// ↓ (optional) sets initial background value if first time visiting
+// BODY.style.background = `url("./img/${pictures[0].name}.jpg")`;
+// applyCssStyles();
+
 const getUserImage = () => {
   const localImage = localStorage.getItem('userImage');
   //checks if user has made changes to their localstorage
